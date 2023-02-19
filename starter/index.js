@@ -18,19 +18,49 @@ const questions = [
         message: 'Please put your project description'
     },
     // Installation guide
+    {
+        type: 'input',
+        name: 'installatiion',
+        message: 'What are the steps to install your product?'
+    },
     // Usage
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'How is your product used?'
+    },
     // License (multiple choice)
     {
         type: 'list',
         choices: ['MIT', 'GPL', 'GNU', 'Bsd-2-Clause'],
         name: 'license',
         message: 'What is your project license type?'
-    }
+    },
     // Contributing
+    {
+        type: 'input',
+        name: 'contributors',
+        message: 'Who contributed to your product?'
+    },
     // Tests
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'What tests can be run on the product?'
+    },
     // Questions
     // GitHub username
+    {
+        type: 'input',
+        name: 'username',
+        message: 'What is your Github username?'
+    },
     // email address
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your email?'
+    },
 ];
 
 // function to write README file
