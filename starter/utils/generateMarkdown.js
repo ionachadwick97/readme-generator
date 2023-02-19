@@ -1,4 +1,5 @@
-// function to generate markdown for README
+// functions for areas of readme that are optional
+// installation
 function generateInstallation(installation) {
   return `
 ## Installation Guide
@@ -6,6 +7,7 @@ ${installation}
 `;
 }
 
+// usage
 function generateUsage(usage) {
   return `
 ## User Guide
@@ -13,6 +15,7 @@ ${usage}
 `;
 }
 
+// contributors
 function generateContributors(contributors) {
   return `
 ## Contributors
@@ -20,6 +23,7 @@ ${contributors}
 `;
 }
 
+// testing
 function generateTest(tests) {
   return `
 ## Testing
@@ -27,10 +31,14 @@ ${tests}
 `;
 }
 
+// function to generate markdown for README
 function generateMarkdown(data) {
+// title
 return `# ${data.title}
+
 ## Description
 ${data.description}
+
 ## Contents
 
 ${data.installation !== '' ? generateInstallation(data.installation) : ''}
@@ -46,4 +54,5 @@ ${data.email}
 `;
 }
 
+// export function
 module.exports = generateMarkdown;
