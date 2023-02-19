@@ -9,44 +9,44 @@ const questions = [
     {
         type: 'input',
         name: 'title',
-        message: 'What is your project title?'
+        message: 'What is the product title?'
     },
     // Description
     {
         type: 'input',
         name: 'description',
-        message: 'Please put your project description'
+        message: 'Please describe the product: '
     },
     // Installation guide
     {
         type: 'input',
-        name: 'installatiion',
-        message: 'What are the steps to install your product?'
+        name: 'installation',
+        message: 'What are the steps to install the product? (Optional)'
     },
     // Usage
     {
         type: 'input',
         name: 'usage',
-        message: 'How is your product used?'
+        message: 'How is the product used? (Optional)'
     },
     // License (multiple choice)
     {
         type: 'list',
         choices: ['MIT', 'GPL', 'GNU', 'Bsd-2-Clause'],
         name: 'license',
-        message: 'What is your project license type?'
+        message: 'What type of licence is being used??'
     },
     // Contributing
     {
         type: 'input',
         name: 'contributors',
-        message: 'Who contributed to your product?'
+        message: 'Who contributed to your product? (Optional)'
     },
     // Tests
     {
         type: 'input',
         name: 'tests',
-        message: 'What tests can be run on the product?'
+        message: 'What tests can be run on the product? (Optional)'
     },
     // Questions
     // GitHub username
@@ -87,3 +87,5 @@ function init() {
 
 // function call to initialize program
 init();
+
+// function call to write the readme
