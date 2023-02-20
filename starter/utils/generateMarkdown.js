@@ -40,6 +40,12 @@ return `# ${data.title}
 ${data.description}
 
 ## Contents
+[Installation](#installation)
+[User Guide](#user guide)
+[Licence](#licence)
+[Contributors](#contributors)
+[Testing](#testing)
+[Questions](#questions)
 
 ${data.installation !== '' ? generateInstallation(data.installation) : ''}
 ${data.usage !== '' ? generateUsage(data.usage) : ''}
