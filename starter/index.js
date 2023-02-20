@@ -21,13 +21,13 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'What are the steps to install the product? (Optional)'
+        message: 'What are the steps to install the product?'
     },
     // Usage
     {
         type: 'input',
         name: 'usage',
-        message: 'How is the product used? (Optional)'
+        message: 'How is the product used?'
     },
     // License (multiple choice)
     {
@@ -40,13 +40,13 @@ const questions = [
     {
         type: 'input',
         name: 'contributors',
-        message: 'Who contributed to your product? (Optional)'
+        message: 'Who contributed to your product?'
     },
     // Tests
     {
         type: 'input',
         name: 'tests',
-        message: 'What tests can be run on the product? (Optional)'
+        message: 'What tests can be run on the product?'
     },
     // Questions
     // GitHub username
@@ -64,7 +64,7 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
     fs.writeFile('README.md', data, (err) => {
         if (err) {
             console.error(err);
@@ -79,13 +79,10 @@ function init() {
     inquirer
         .prompt(questions)
         .then(answers => {
-            console.log(answers);
-            const markdown = generateMarkdown(answers);
-            console.log(markdown);
+            const markdown = generateMarkdown(answers)
+            writeToFile(markdown)
         });
 }
 
 // function call to initialize program
 init();
-
-// function call to write the readme
