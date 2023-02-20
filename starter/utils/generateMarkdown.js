@@ -11,7 +11,7 @@ ${data.description}
 
 [Installation](#installation)
 
-[User Guide](#user guide)
+[Usage](#usage)
 
 [Licence](#licence)
 
@@ -25,11 +25,11 @@ ${data.description}
 
 ${data.installation}
 
-## User Guide
+## Usage
 
 ${data.usage}
 
-## License
+## Licence
 
 ${data.license}
 
